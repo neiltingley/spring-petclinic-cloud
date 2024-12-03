@@ -5,8 +5,4 @@ env:
 phases:
   build:
     commands:
-    - mvn -B -T1 package
-
-  containerize:
-    commands:
-    - mvn spring-boot:build-image
+    - mvn -B -T1 clean spring-boot:build-image
